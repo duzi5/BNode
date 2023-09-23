@@ -1,0 +1,14 @@
+{
+  "name": "node1",
+  "version": "1.0.0",
+  "description": "Criando minha primira api em js",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Antonio Netto (duzi5)",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
