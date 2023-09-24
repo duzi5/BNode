@@ -4,11 +4,21 @@
   "description": "Criando minha primira api em js",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "dev": "npx nodemon src/index.js",
+    "start": "node src/index.js",
+    "lint:fix": "npx eslint ./src --ext .js --fix --ignore-path ./.gitignore",
+    "lint:format": "npx prettier --log-level=warn --write \"./**/*.{js, ts}\"",
+    "lint": "npm run lint:format && npm run lint:fix"
   },
   "author": "Antonio Netto (duzi5)",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2"
-  }
+  },
+  "devDependencies": {
+    "pre-commit": "^1.2.2",
+    "prettier": "^3.0.3"
+  },
+  "pre-commit": "lint"
 }
